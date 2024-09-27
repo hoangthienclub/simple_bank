@@ -19,4 +19,7 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-.PHONY: createdb postgres postgres sqlc
+server:
+	go run main.go
+
+.PHONY: createdb postgres postgres sqlc server
